@@ -5,7 +5,7 @@ Generate a new [Thorax](http://thoraxjs.org/) application. Includes some configu
     $ npm install -g yo generator-thorax
     $ yo thorax desired-application
     $ cd desired-application
-    $ npm start
+    $ grunt
 
 For a snazzier development environment, it's recommended that you install the [Thorax Inspector Chrome Extension](https://chrome.google.com/webstore/detail/thorax-inspector/poioalbefcopgeaeaadelomciijaondk?hl=en-US) before getting started.
 
@@ -265,3 +265,13 @@ To deploy to heroku:
 6. Run `heroku open` to see your app live on the web!
 
 Note: During deployment run `foreman start` to test your application. Open your browser to port `5000` to view your app.
+
+To deploy to nodejitsu:
+
+1. Install the tool: `npm install jitsu -g`
+2. Create an account: `jitsu signup`
+3. Login: `jitsu login`
+4. Build your application: `grunt production`
+5. Deploy: `jitsu deploy`
+
+That's it. Your `package.json` file already has a `scripts` option named `start` that nodejitsu will use to boot the application.

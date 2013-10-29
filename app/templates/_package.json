@@ -27,7 +27,7 @@
     <% if (includeCoffeeScript) { %>, "grunt-contrib-coffee": "~0.7.0"<% } %>
   },
   "scripts": {
-    "start": "node ./node_modules/.bin/grunt",
+    "start": "node ./server.js",
     "test": "node ./node_modules/.bin/grunt test"
   },
   "engines": {
