@@ -253,3 +253,15 @@ Our finished `js/views/todo-list/index.js` file should look like:
 
 And that's a finished non-persistent todo list application! For more complex examples and tutorials using the thorax framework, see the [tutorials on the Thorax homepage](http://thoraxjs.org)
 
+To deploy to heroku:
+
+1. Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed and you have logged into your account via `heroku login`.
+2. Build your app: `grunt production`. This will output a minified version of your app to `dist/` which heroku will serve up.
+3. Make sure you have committed your changes to git:
+    - `git add .`
+    - `git commit -m "commit message here"`
+4. Run `heroku create` from the command line.
+5. Run `git push heroku master`
+6. Run `heroku open` to see your app live on the web!
+
+Note: During deployment run `foreman start` to test your application. Open your browser to port `5000` to view your app.

@@ -2,7 +2,9 @@
   "name": "<%= _.dasherize(name) %>",
   "appName": "<%= _.classify(name) %>",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "connect": "~2.10.x"
+  },
   "devDependencies": {
     "grunt-contrib-connect": "0.3.0",
     "grunt": "~0.4",
